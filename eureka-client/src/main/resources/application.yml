@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    instance-id: eureka-client
+    prefer-ip-address: true
+  client:
+    service-url:
+#      defaultZone: http://eureka-server-9001.com:9001/eureka/
+      defaultZone: http://eureka-server-9002.com:9002/eureka/
+#      defaultZone: http://eureka-server-9001.com:9001/eureka/, http://eureka-server-9002.com:9002/eureka/, http://eureka-server-9003.com:9003/eureka/
+logging:
+  level:
+    com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient: debug
