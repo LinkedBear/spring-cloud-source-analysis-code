@@ -10,13 +10,14 @@ eureka:
     hostname: eureka-server-9001.com
   server:
     registry-sync-retry-wait-ms: 5000
+    retention-time-in-m-s-in-delta-queue: 30000
   client:
 #    register-with-eureka: false
 #    fetch-registry: false
     service-url:
-      defaultZone: http://eureka-server-9001.com:9001/eureka/
+#      defaultZone: http://eureka-server-9001.com:9001/eureka/
+      defaultZone: http://eureka-server-9002.com:9002/eureka/
 #      defaultZone: http://eureka-server-9002.com:9002/eureka/ #, http://eureka-server-9003.com:9003/eureka/
-
 #logging:
 #  level:
 #    root: debug
