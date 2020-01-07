@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -7,7 +7,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: eureka-client
+    instance-id: eureka-client2
     prefer-ip-address: true
   client:
     service-url:

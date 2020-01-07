@@ -14,8 +14,8 @@ eureka:
 #    register-with-eureka: false
 #    fetch-registry: false
     service-url:
-#      defaultZone: http://eureka-server-9001.com:9001/eureka/
-      defaultZone: http://eureka-server-9002.com:9002/eureka/ #, http://eureka-server-9003.com:9003/eureka/
+      defaultZone: http://eureka-server-9001.com:9001/eureka/
+#      defaultZone: http://eureka-server-9002.com:9002/eureka/ #, http://eureka-server-9003.com:9003/eureka/
 
 #logging:
 #  level:
