@@ -1,0 +1,13 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: ribbon-feign-consumer
+
+eureka:
+  instance:
+    instance-id: ribbon-feign-consumer
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/
