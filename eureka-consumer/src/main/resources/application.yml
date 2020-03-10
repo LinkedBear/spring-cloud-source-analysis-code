@@ -1,0 +1,13 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: eureka-consumer
+
+eureka:
+  instance:
+    instance-id: eureka-consumer
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/

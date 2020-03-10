@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example.ribbon</groupId>
-    <artifactId>ribbon</artifactId>
+    <artifactId>ribbon_feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>

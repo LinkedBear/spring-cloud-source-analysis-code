@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    instance-id: eureka-client2
+    prefer-ip-address: true
+    metadata-map:
+      zone: beijing1
+  client:
+    service-url:
+      beijing1: http://eureka-server-9001.com:9001/eureka/
+      beijing2: http://eureka-server-9002.com:9002/eureka/
+    region: beijing
+    availability-zones:
+      beijing: beijing1,beijing2

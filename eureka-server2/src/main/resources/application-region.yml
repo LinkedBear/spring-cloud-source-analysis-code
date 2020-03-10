@@ -1,0 +1,23 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: eureka-server-9002.com
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  server:
+    registry-sync-retry-wait-ms: 5000
+    retention-time-in-m-s-in-delta-queue: 30000
+  client:
+    service-url:
+      beijing2: http://eureka-server-9002.com:9002/eureka/
+      beijing1: http://eureka-server-9001.com:9001/eureka/
+    region: beijing
+    availability-zones:
+      beijing: beijing2,beijing1
