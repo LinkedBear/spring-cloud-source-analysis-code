@@ -1,0 +1,13 @@
+server:
+  port: 9900
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  instance:
+    instance-id: zuul-server
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/

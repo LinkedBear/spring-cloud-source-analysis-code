@@ -1,0 +1,13 @@
+server:
+  port: 7500
+
+spring:
+  application:
+    name: zuul-consumer
+
+eureka:
+  instance:
+    instance-id: zuul-consumer
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/
