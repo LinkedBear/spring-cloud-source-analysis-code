@@ -1,0 +1,25 @@
+server:
+  port: 9900
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: eureka-client
+          uri: lb://eureka-client
+          predicates:
+            - Path=/getInfo
+#          filters:
+#            - RewritePath=/getInfo
+
+eureka:
+  instance:
+    instance-id: gateway-server
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/

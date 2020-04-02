@@ -2,6 +2,7 @@ package com.example.eureka.client.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,6 +14,11 @@ public class ProviderController {
     @GetMapping("/getInfo")
     public String getInfo() {
         return zone;
+    }
+    
+    @PostMapping("/postInfo")
+    public String postInfo(String input) {
+        return "postInfo" + input;
     }
     
 }

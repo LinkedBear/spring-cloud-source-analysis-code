@@ -1,0 +1,13 @@
+server:
+  port: 7600
+
+spring:
+  application:
+    name: gateway-consumer
+
+eureka:
+  instance:
+    instance-id: gateway-consumer
+  client:
+    service-url:
+      defaultZone: http://eureka-server-9001.com:9001/eureka/
