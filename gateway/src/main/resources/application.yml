@@ -11,7 +11,7 @@ spring:
           enabled: true
       routes:
         - id: eureka-client
-          uri: lb://eureka-client
+          uri: http://localhost:7001/getInfo  # lb://eureka-client
           predicates:
             - Path=/getInfo
 #          filters:
